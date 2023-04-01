@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Registration Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>ACE Engineering College</h1>
+        <h4>Student Registration Form</h4>
+        <form id="registration-form" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="gender">Gender:</label>
+            <div class="radio-buttons">
+                <label><input type="radio" name="gender" value="male">Male</label>
+                <label><input type="radio" name="gender" value="female">Female</label>
+                <label><input type="radio" name="gender" value="other">Other</label>
+            </div>
+
+            <label for="year">Year:</label>
+            <select id="year" name="year" required>
+                <option value="">Select year</option>
+                <option value="1">First year</option>
+                <option value="2">Second year</option>
+                <option value="3">Third year</option>
+                <option value="4">Fourth year</option>
+            </select>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+            <label for="course">Course:</label>
+            <select id="course" name="course" required>
+                <option value="">Select course</option>
+                <option value="computer-science">Computer Science</option>
+                <option value="engineering">Engineering</option>
+                <option value="business">Business</option>
+                <option value="health-sciences">Health Sciences</option>
+            </select>
+
+            <label for="phone">Mobile Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your mobile number" pattern="[0-9]{10}"
+                required>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
